@@ -31,9 +31,9 @@ class widget(QWidget):
         vobx.addWidget(self.group)
         self.setLayout(vobx)
     def autocomple(self):
-        self.group = QGroupBox('Enter your name:')
+        self.group = QGroupBox('Choose your liked sport:')
         grid = QGridLayout()
-        self.names = ['Yuvan','Paavani','Mumma','Papa','Dadi','Chachu','Twisha','Bhui','Fufu','Chachi','Anna']
+        self.names = ['Football','Cricket','Badminton']
         self.comp = QCompleter(self.names)
         self.comp.activated.connect(self.grt)
         self.line = QLineEdit()
